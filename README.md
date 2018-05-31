@@ -32,7 +32,7 @@ Run the following commands
 The requests can be made from Postman or any other REST api client tool after the second command is executed.
 
 #Design of the application
-The application is designed and developed as a Spring Boot application. 
+The application is designed and developed as a Spring Boot REST API application. 
 On the start of the application using spring boot at port 8080, the application reads the "city.txt", "exception.json", and log.xml  
 files from the classpath directory "CityConnections\src\main\resources".
 
@@ -52,6 +52,7 @@ Customized exception handling is done to handle exceptional scenarios.
 For e.g. http://localhost:8080/connected?origin=SanMatio&destination=Sanfransisco will return the response message "The origin or desination or both pair cannot be found." and 
 the HTTP Status of the response will show up as 404. For success scenarios, it is 200 OK. (refer CityConnectionException.java)
 
-
+#TestCoverage
+All functionality related to creation of graph (CityGraphTest.java) and finding the city pair (CityServiceTest.java) is covered.
 
 
