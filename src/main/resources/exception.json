@@ -1,0 +1,26 @@
+{
+	"CITIES_CONFIG_NOT_FOUND": {	
+		"HTTP_STATUS":"BAD_GATEWAY",	
+		"Message":"City.txt file cannot be read. Please fix the path and restart the application."		
+	},
+	
+	"NO_CITIES_FOUND_IN_CONFIG" : {
+		"HTTP_STATUS":"NO_CONTENT",
+		"Message":"City.txt file is empty."				
+	},
+	
+	"INCORRECT_JSON": {	
+		"HTTP_STATUS":"BAD_GATEWAY",	
+		"Message":"exception.json file do not have json format. Please fix the json and restart the application."		
+	},
+	
+	"ORIGIN_DESTINATION_PAIR_NOT_FOUND":{
+		"HTTP_STATUS":"NOT_FOUND",
+		"Message":"The origin or desination or both pair cannot be found."
+	},
+	
+	"ORIGIN_DESTINATION_EMPTY":{
+		"HTTP_STATUS":"UNPROCESSABLE_ENTITY",
+		"Message":"One or both of the Origin and Destination are not present in the request."
+	}
+}
